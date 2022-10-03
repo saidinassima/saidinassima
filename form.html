@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Formularios</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <h1>formulario</h1>
+    </header>
+    <main>
+      <form>
+        <label for="name">name:</label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          placeholder="escribir tu nombre"
+          required
+          autofocus
+        />
+
+        <label for="email">email:</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="url"> web personel :</label>
+        <input
+          id="url"
+          name="url"
+          type="url"
+          placeholder="Escribe la URL de tu página web personal"
+        />
+
+        <label for="tiempo">tiempo:</label>
+        <input id="tiempo" name="tiempo" type="time" />
+
+        <label for="fecheyhora">fecheyhora:</label>
+        <input id="fecheyhora" name="fecheyhora" type="datetime-local" />
+
+        <label for="mes">mes:</label>
+        <input id="mes" name="mes" type="month" />
+
+        <label for="semana">semana:</label>
+        <input id="semana" name="semana" type="week" />
+
+        <label for="numero">numero:</label>
+        <input id="numero" name="numero" type="number" min="-10" max="10" />
+
+        <label for="tel">Teléfono:</label>
+        <input
+          id="tel"
+          name="tel"
+          type="tel"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          required
+        />
+        <button type="button" disabled>search</button>
+
+        <label for="color">colorfavorito:</label>
+        <input id="color" name="color" type="color" />
+
+        <button>enviar</button>
+      </form>
+    </main>
+  </body>
+</html>
